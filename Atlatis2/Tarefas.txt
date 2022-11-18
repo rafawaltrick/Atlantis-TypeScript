@@ -1,0 +1,20 @@
+- CRUD de cliente, incluindo clientes dependentes.
+- Listagem de clientes dependentes para um titular específico.
+- Listagem do titular para o cliente dependente específico.
+
+
+Titular
+
+Atualizar
+Buscar Todos OK
+Buscar Dependentes 
+Buscar Individual OK
+Criar OK
+Deletar
+
+dependente
+
+Atualizar
+Buscar
+Criar
+Deletar
