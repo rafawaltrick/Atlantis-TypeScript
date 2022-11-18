@@ -29,7 +29,7 @@ this.listaClientes  = Armazem.InstanciaUnica.Clientes
             dependente.Endereco = titular?.Endereco.clonar() as Endereco
             
             titular.Dependentes.push(dependente)
-            dependente.Titular = titular
+            dependente.setTitular = titular
             
             this.listaClientes.push(dependente)
                     

@@ -19,7 +19,13 @@ class Cliente {
     get Documentos() { return this.documentos; }
     get Dependentes() { return this.dependentes; }
     get Titular() { return this.titular; }
+    set setNome(nome) { this.nome = nome; }
+    set setNomeSocial(nomeSocial) { this.nomeSocial = nomeSocial; }
+    set setDataNascimento(dataNascimento) { this.dataNascimento = dataNascimento; }
     set Endereco(endereco) { this.endereco = endereco; }
-    set Titular(titular) { this.titular = titular; }
+    set setTelefones(telefones) { this.telefones = telefones; }
+    set setDocumentos(documentos) { this.documentos = documentos; }
+    set setTitular(titular) { this.titular = titular; }
+    set setDependente(dependente) { this.dependentes.push(dependente); }
 }
 exports.default = Cliente;

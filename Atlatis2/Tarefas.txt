@@ -7,7 +7,6 @@ Titular
 
 Atualizar
 Buscar Todos OK
-Buscar Dependentes 
 Buscar Individual OK
 Criar OK
 Deletar
@@ -15,6 +14,6 @@ Deletar
 dependente
 
 Atualizar
-Buscar
-Criar
+Buscar OK
+Criar OK
 Deletar

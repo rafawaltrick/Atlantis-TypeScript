@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const processo_1 = __importDefault(require("../abstracoes/processo"));
 const menuTipoListagemClientes_1 = __importDefault(require("../menus/menuTipoListagemClientes"));
 const listagemTitulares_1 = __importDefault(require("./listagemTitulares"));
+const listarDependentes_1 = __importDefault(require("./listarDependentes"));
 class TipoListagemClientes extends processo_1.default {
     constructor() {
         super();
@@ -19,8 +20,12 @@ class TipoListagemClientes extends processo_1.default {
                 this.processo = new listagemTitulares_1.default();
                 this.processo.processar();
                 break;
+            case 2:
+                this.processo = new listarDependentes_1.default();
+                this.processo.processar();
+                break;
             default:
-                console.log('Opção não entendida... :(');
+                console.log('Opção não Entendida! :(');
         }
     }
 }

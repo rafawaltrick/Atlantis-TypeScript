@@ -23,7 +23,7 @@ class CadastrarDependente extends processo_1.default {
             let dependente = new cliente_1.default(nome, nomeSocial, dataNascimento);
             dependente.Endereco = titular === null || titular === void 0 ? void 0 : titular.Endereco.clonar();
             titular.Dependentes.push(dependente);
-            dependente.Titular = titular;
+            dependente.setTitular = titular;
             this.listaClientes.push(dependente);
             console.log(`Finalizado cadastro do dependente do(a) ${titular.Nome}`);
         }

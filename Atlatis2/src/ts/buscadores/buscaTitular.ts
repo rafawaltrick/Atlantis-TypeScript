@@ -22,4 +22,3 @@ export default class BuscaTitular implements Busca <Cliente> {
             }
         }
 
-}

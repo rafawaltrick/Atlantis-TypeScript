@@ -4,6 +4,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const processo_1 = __importDefault(require("../abstracoes/processo"));
+const gerarClientes_1 = __importDefault(require("../gerarClientes"));
 const menuPricipal_1 = __importDefault(require("../menus/menuPricipal"));
 const tipoCadastroCliente_1 = __importDefault(require("./tipoCadastroCliente"));
 const tipoListagemClientes_1 = __importDefault(require("./tipoListagemClientes"));
@@ -23,6 +24,10 @@ class Principal extends processo_1.default {
                 break;
             case 3:
                 this.processo = new tipoListagemClientes_1.default();
+                this.processo.processar();
+                break;
+            case 4:
+                this.processo = new gerarClientes_1.default();
                 this.processo.processar();
                 break;
             case 0:

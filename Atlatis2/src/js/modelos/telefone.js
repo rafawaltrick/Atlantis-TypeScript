@@ -7,5 +7,12 @@ class Telefone {
     }
     get Ddd() { return this.ddd; }
     get Numero() { return this.numero; }
+    get numeroDDD() { return this.Ddd + ' ' + this.Numero; }
+    set setDDD(ddd) { this.ddd = ddd; }
+    set setNumero(numero) { this.numero = numero; }
+    clonar() {
+        let telefone = new Telefone(this.ddd, this.numero);
+        return telefone;
+    }
 }
 exports.default = Telefone;
