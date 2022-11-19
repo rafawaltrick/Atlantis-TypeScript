@@ -31,7 +31,6 @@ export default class GerarClientes extends Processo{
                 cliente.endereco.codigoPostal,
             )
             documentos = cliente.documentos.map(documento => { return new Documento(documento.numero, documento.tipo, documento.dataExpedicao) })
-
             objCliente.setTelefones = telefones
             objCliente.Endereco = endereco
             objCliente.setDocumentos = documentos

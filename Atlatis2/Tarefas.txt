@@ -1,5 +1,5 @@
 - CRUD de cliente, incluindo clientes dependentes.
-- Listagem de clientes dependentes para um titular específico.
+- Listagem de clientes dependentes para um titular específico.      OK 19/11/2022
 - Listagem do titular para o cliente dependente específico.
 
 
@@ -13,6 +13,7 @@ Deletar
 
 dependente
 
+Buscar Todos OK 19/11/2022
 Atualizar
 Buscar OK
 Criar OK

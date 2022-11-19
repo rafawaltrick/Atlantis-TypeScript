@@ -41,8 +41,10 @@ export default class ExcluirTitular extends Processo {
         if (indice === -1) {
             console.log(`Titular não Encontrado.`);
         } else {
+            console.log(indice)
             this.clientes.splice(indice, 1)
             console.log(`Titular com Documento ${numeroDocumento} Excluido com Sucessso!`);
+            console.log(this.clientes)
         }
 
     }
